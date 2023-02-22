@@ -1,16 +1,23 @@
 # mongoose 系列之一 find 查询
+
 ```ts
 Model.find(filter, [projection], [options], [callback])
 ```
+
 ## find()
+
 ```ts
 Model.find(filter, [projection], [options], [callback])
 ```
-#### 参数一：`filter`
-查询条件使用 JSON 文档的格式，JSON 文档的语法跟 MongoDB shell 中一致。
+
+### 参数一：`filter`
+
+查询条件使用 JSON 文档的格式，JSON 文档的语法跟 MongoDB shell 中一致。\
+
 ```ts
 { field1: value1, field2: { operator: value2 } ... }
 ```
+
 1. 查找全部
 ```ts
 Model.find()
